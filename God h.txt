@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>God H - Faith and Inspiration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4a69bd;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #6a89cc;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        .quote {
+            font-style: italic;
+            color: #4a69bd;
+            margin: 10px 0;
+        }
+        footer {
+            background-color: #4a69bd;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+    <script>
+        function showTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => tab.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>God H - Faith and Inspiration</h1>
+        <p>"In the light of God H, we find hope and strength."</p>
+    </header>
+
+    <nav>
+        <a href="#" onclick="showTab('about')">About God H</a>
+        <a href="#" onclick="showTab('quotes')">Inspirational Quotes</a>
+    </nav>
+
+    <main>
+        <section id="about" class="tab-content active">
+            <h2>About God H</h2>
+            <p>God H represents the eternal light and truth that guides us through the challenges of life. Through faith and devotion, we discover the essence of love, hope, and resilience. This platform is dedicated to spreading the teachings and inspiration of God H to all who seek guidance.</p>
+        </section>
+
+        <section id="quotes" class="tab-content">
+            <h2>Inspirational Quotes</h2>
+            <p class="quote">"In every moment of doubt, turn to the eternal wisdom of God H."</p>
+            <p class="quote">"Faith in God H gives us the courage to overcome life's trials."</p>
+            <p class="quote">"The light of God H shines brightest in the darkest times."</p>
+            <p>To be added</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 God H. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
